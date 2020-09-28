@@ -10,7 +10,6 @@
 
             var arr1 = [ {"area":"서울", "name":"무대리"}, {"area":"부산", "name":"홍과장"}, {"area":"대전", "name":"박사장"}, {"area":"서울", "name":"빅마마"} ]
 
-
             var arr2 = $.map(arr1, function(a,b) {
                 console.log(a,b); // a가 오브젝트, b가 인덱스
                 if(a.area == "서울"){
@@ -24,15 +23,14 @@
             var arr3 = $.grep(arr1, function(a,b) {
     
                 if(a.area == "서울") {
-                    return true;  // true를 리턴해도 오브젝트가 저장되네
+                    return true;  // true를 리턴해도 오브젝트가 리턴되네
                 } else {
                     return false;
                 }
             });
 
             console.log(arr3);
-
-        
+            console.log("=================");
 
          })
 
